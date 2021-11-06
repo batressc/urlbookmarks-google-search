@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "version_name": "1.0.0 newbie",
+    "name": "Url bookmarks icons for Google's Search Results",
+    "short_name": "ba3-urlbmark",
+    "description": "This extension creates bookmarks icons next to Google's search results",
+    "author": "Luis Gustavo Fernández Batres",
+    "homepage_url": "https://batressc.com",
+    "icons": {
+        "16": "/images/16x16_icon.png",
+        "32": "/images/32x32_icon.png",
+        "48": "/images/48x48_icon.png",
+        "128": "/images/128x128_icon.png"
+    },
+    "permissions": [
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://www.google.com/*"
+            ]
+        }
+    ]
+}
